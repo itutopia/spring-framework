@@ -156,7 +156,11 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	//---------------------------------------------------------------------
 
 	/**
+	 * TODO: 注册组件类
 	 * Register one or more component classes to be processed.
+	 *
+	 * 注册一个或多个要处理的组件类。
+	 *
 	 * <p>Note that {@link #refresh()} must be called in order for the context
 	 * to fully process the new classes.
 	 * @param componentClasses one or more component classes &mdash; for example,

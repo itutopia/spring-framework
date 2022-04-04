@@ -35,7 +35,10 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
 
 /**
+ * TODO: ComponentScan注释解释器
  * Parser for the @{@link ComponentScan} annotation.
+ *
+ * ComponentScan注释的解析器。
  *
  * @author Chris Beams
  * @author Juergen Hoeller

@@ -28,11 +28,18 @@
 package org.springframework.asm;
 
 /**
+ * TODO: JVM操作码,访问标志和数组类型代码。
  * The JVM opcodes, access flags and array type codes. This interface does not define all the JVM
  * opcodes because some opcodes are automatically handled. For example, the xLOAD and xSTORE opcodes
  * are automatically replaced by xLOAD_n and xSTORE_n opcodes when possible. The xLOAD_n and
  * xSTORE_n opcodes are therefore not defined in this interface. Likewise for LDC, automatically
  * replaced by LDC_W or LDC2_W when necessary, WIDE, GOTO_W and JSR_W.
+ *
+ * JVM操作码、访问标志和数组类型代码。
+ * 这个接口没有定义所有的JVM操作码，因为有些操作码是自动处理的。
+ * 例如，如果可能，xLOAD和xSTORE操作码会自动替换为xLOAD_n和xSTORE_n操作码。
+ * 因此，xLOAD_n和xSTORE_n操作码不在此接口中定义。
+ * 同样适用于LDC，必要时自动替换为LDC_W或LDC2_W、WIDE、GOTO_W和JSR_W。
  *
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-6.html">JVMS 6</a>
  * @author Eric Bruneton

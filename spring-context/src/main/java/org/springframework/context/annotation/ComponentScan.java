@@ -141,6 +141,7 @@ public @interface ComponentScan {
 
 	/**
 	 * Specifies which types are not eligible for component scanning.
+	 * 指定哪些类型不符合组件扫描条件
 	 * @see #resourcePattern
 	 */
 	Filter[] excludeFilters() default {};
@@ -156,6 +157,9 @@ public @interface ComponentScan {
 	/**
 	 * Declares the type filter to be used as an {@linkplain ComponentScan#includeFilters
 	 * include filter} or {@linkplain ComponentScan#excludeFilters exclude filter}.
+	 *
+	 * 声明要用作{@linkplain ComponentScan#includeFilters }或{@linkplain ComponentScan#excludeFilters}的类型筛选器。
+	 *
 	 */
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target({})

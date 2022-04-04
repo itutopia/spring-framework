@@ -23,6 +23,8 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * A single {@code condition} that must be {@linkplain #matches matched} in order
  * for a component to be registered.
  *
+ * 单个 {@code condition}必须是{@linkplain#matches matched}才能注册组件。
+ *
  * <p>Conditions are checked immediately before the bean-definition is due to be
  * registered and are free to veto registration based on any criteria that can
  * be determined at that point.

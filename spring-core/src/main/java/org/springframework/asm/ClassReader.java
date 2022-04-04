@@ -37,6 +37,9 @@ import java.io.InputStream;
  * appropriate visit methods of a given {@link ClassVisitor} for each field, method and bytecode
  * instruction encountered.
  *
+ * 一个解析器，使{@link ClassVisitor}访问Java虚拟机规范（JVMS）中定义的类文件结构。
+ * 这个类解析类文件内容并调用针对遇到的每个字段、方法和字节码指令，指定{@link ClassVisitor}的适当访问方法。
+ *
  * @see <a href="https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-4.html">JVMS 4</a>
  * @author Eric Bruneton
  * @author Eugene Kuleshov

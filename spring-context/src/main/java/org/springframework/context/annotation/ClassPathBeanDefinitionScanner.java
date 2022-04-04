@@ -36,9 +36,15 @@ import org.springframework.util.Assert;
 import org.springframework.util.PatternMatchUtils;
 
 /**
+ *
+ * TODO: ClassPathBeanDefinitionScanner: 类路径Bean定义扫描器
+ *
  * A bean definition scanner that detects bean candidates on the classpath,
  * registering corresponding bean definitions with a given registry ({@code BeanFactory}
  * or {@code ApplicationContext}).
+ *
+ * 一个bean定义扫描器，它在类路径上检测bean候选，
+ * 在给定的注册表（{@code BeanFactory}或{@code ApplicationContext}）中注册相应的bean定义。
  *
  * <p>Candidate classes are detected through configurable type filters. The
  * default filters include classes that are annotated with Spring's
