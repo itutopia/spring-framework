@@ -23,13 +23,20 @@ import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
 
 /**
+ *
+ * TODO:001-003 BeanDefinition
+ *
  * A BeanDefinition describes a bean instance, which has property values,
  * constructor argument values, and further information supplied by
  * concrete implementations.
  *
+ *  BeanDefinition描述一个具有属性值的bean实例，构造函数参数值，以及具体的实现。
+ *
  * <p>This is just a minimal interface: The main intention is to allow a
  * {@link BeanFactoryPostProcessor} to introspect and modify property values
  * and other bean metadata.
+ *
+ * 这仅是一个最小的接口：主要目的是允许{@link BeanFactoryPostProcessor}用于内省和修改属性值以及其他bean元数据。
  *
  * @author Juergen Hoeller
  * @author Rob Harrop

@@ -22,9 +22,14 @@ import org.springframework.beans.factory.support.BeanNameGenerator;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
+ * TODO:
+ *
  * Interface to be implemented by types that register additional bean definitions when
  * processing @{@link Configuration} classes. Useful when operating at the bean definition
  * level (as opposed to {@code @Bean} method/instance level) is desired or necessary.
+ *
+ * 接口将由注册其他bean定义的类型实现正在处理@{@link Configuration}类。
+ * 在bean定义下操作时非常有用级别（与{@code @Bean}方法/实例级别相反）是需要的或必需的。
  *
  * <p>Along with {@code @Configuration} and {@link ImportSelector}, classes of this type
  * may be provided to the @{@link Import} annotation (or may also be returned from an

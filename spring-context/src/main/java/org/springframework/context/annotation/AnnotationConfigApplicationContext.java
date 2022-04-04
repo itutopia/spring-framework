@@ -34,6 +34,10 @@ import org.springframework.util.Assert;
  * {@link org.springframework.stereotype.Component @Component} types and JSR-330 compliant
  * classes using {@code jakarta.inject} annotations.
  *
+ * 独立应用程序上下文，接受组件类作为输入.特别是{@link Configuration @Configuration}注释的类，
+ * 也很直接兼容{@link org.springframework.stereotype.Component@Component}类型和JSR-330兼容
+ * 使用{@code jakarta.inject}注释的类。
+ *
  * <p>Allows for registering classes one by one using {@link #register(Class...)}
  * as well as for classpath scanning using {@link #scan(String...)}.
  *

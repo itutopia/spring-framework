@@ -23,11 +23,16 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ *
  * Marks a constructor, field, setter method, or config method as to be autowired by
  * Spring's dependency injection facilities. This is an alternative to the JSR-330
  * {@link jakarta.inject.Inject} annotation, adding required-vs-optional semantics.
  *
+ * 通过Spring的依赖注入设施将构造函数、字段、setter方法或config方法标记为自动连接。
+ * 这是JSR-330的替代品{@link jakarta.inject.Inject}注释，添加必需和可选语义。
+ *
  * <h3>Autowired Constructors</h3>
+ * 自动链接构造函数
  * <p>Only one constructor of any given bean class may declare this annotation with the
  * {@link #required} attribute set to {@code true}, indicating <i>the</i> constructor
  * to autowire when used as a Spring bean. Furthermore, if the {@code required}
@@ -105,7 +110,9 @@ public @interface Autowired {
 
 	/**
 	 * Declares whether the annotated dependency is required.
+	 * 声明是否需要带注释的依赖项。
 	 * <p>Defaults to {@code true}.
+	 * 默认值是true
 	 */
 	boolean required() default true;
 

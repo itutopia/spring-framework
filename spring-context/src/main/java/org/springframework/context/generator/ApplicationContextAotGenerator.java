@@ -16,18 +16,8 @@
 
 package org.springframework.context.generator;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Objects;
-import java.util.function.BiPredicate;
-import java.util.stream.Stream;
-
-import javax.lang.model.element.Modifier;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.aot.generator.GeneratedType;
 import org.springframework.aot.generator.GeneratedTypeContext;
 import org.springframework.beans.factory.BeanFactory;
@@ -42,9 +32,17 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.OrderComparator;
-import org.springframework.javapoet.CodeBlock;
-import org.springframework.javapoet.MethodSpec;
-import org.springframework.javapoet.ParameterizedTypeName;
+//import org.springframework.javapoet.CodeBlock;
+//import org.springframework.javapoet.MethodSpec;
+//import org.springframework.javapoet.ParameterizedTypeName;
+
+import javax.lang.model.element.Modifier;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Objects;
+import java.util.function.BiPredicate;
+import java.util.stream.Stream;
 
 /**
  * Process an {@link ApplicationContext} and its {@link BeanFactory} to generate

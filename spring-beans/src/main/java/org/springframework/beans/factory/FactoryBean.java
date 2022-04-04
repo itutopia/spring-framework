@@ -19,10 +19,15 @@ package org.springframework.beans.factory;
 import org.springframework.lang.Nullable;
 
 /**
+ * TODO: 001-002 FactoryBean
+ *
  * Interface to be implemented by objects used within a {@link BeanFactory} which
  * are themselves factories for individual objects. If a bean implements this
  * interface, it is used as a factory for an object to expose, not directly as a
  * bean instance that will be exposed itself.
+ *
+ * 由{@link BeanFactory}中使用的对象实现的接口. 它们本身就是单个对象的工厂。
+ * 如果bean实现了这个接口，它被用作对象暴露的工厂，而不是直接作为bean实例，该实例将自身公开。
  *
  * <p><b>NB: A bean that implements this interface cannot be used as a normal bean.</b>
  * A FactoryBean is defined in a bean style, but the object exposed for bean
