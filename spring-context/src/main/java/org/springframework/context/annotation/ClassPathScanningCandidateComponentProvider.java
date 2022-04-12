@@ -70,6 +70,12 @@ import org.springframework.util.ClassUtils;
  * supported: if any other include filter is specified, the index is ignored and
  * classpath scanning is used instead.
  *
+ * 从基本包中提供候选组件的组件提供程序。
+ * 如果类路径中有{@link CandidateComponentsIndex the index}，则可以使用{@link CandidateComponentsIndex the index}。
+ * 通过应用排除和包含过滤器来识别候选组件。
+ * {@link AnnotationTypeFilter}，{@link AssignableTypeFilter}支持注释为{@link Indexed}的注释/超类上的include过滤器：
+ * 如果指定了任何其他include过滤器，则忽略索引，改为使用类路径扫描。
+ *
  * <p>This implementation is based on Spring's
  * {@link org.springframework.core.type.classreading.MetadataReader MetadataReader}
  * facility, backed by an ASM {@link org.springframework.asm.ClassReader ClassReader}.

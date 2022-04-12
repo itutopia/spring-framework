@@ -22,9 +22,10 @@ import org.springframework.lang.Nullable;
 
 /**
  *
- * TODO: 001-002 :BeanFactory
+ * TODO: 001-002 :BeanFactory(Bean工厂类: 利用BeanDefinition生成Bean对象实例.)
  * The root interface for accessing a Spring bean container.
- * 用于访问Spring bean容器的根接口。
+ *
+ * 用于访问Spring Bean容器的根接口。
  *
  * <p>This is the basic client view of a bean container;
  * further interfaces such as {@link ListableBeanFactory} and

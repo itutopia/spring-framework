@@ -29,6 +29,8 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 
 /**
+ * TODO: ApplicationContent接口执行类
+ *
  * Standalone application context, accepting <em>component classes</em> as input &mdash;
  * in particular {@link Configuration @Configuration}-annotated classes, but also plain
  * {@link org.springframework.stereotype.Component @Component} types and JSR-330 compliant
@@ -88,6 +90,9 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	/**
 	 * Create a new AnnotationConfigApplicationContext, deriving bean definitions
 	 * from the given component classes and automatically refreshing the context.
+	 *
+	 * 创建一个新的 AnnotationConfigApplicationContext，从给定的组件类派生bean定义，并自动刷新上下文。
+	 *
 	 * @param componentClasses one or more component classes &mdash; for example,
 	 * {@link Configuration @Configuration} classes
 	 */
